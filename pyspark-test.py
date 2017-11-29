@@ -12,7 +12,7 @@ sc = SparkContext(conf = conf)
 sqlContext = SQLContext(sc)
 
 # constructing a dataframe from a CSV
-df = sqlContext.read.load('./test.csv',
+df = sqlContext.read.load('./FL_insurance_sample.csv',
     # format of the data
     format='com.databricks.spark.csv',
     # means that the csv files contains the header
