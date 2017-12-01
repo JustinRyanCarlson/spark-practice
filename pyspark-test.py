@@ -24,3 +24,4 @@ df = sqlContext.read.load('./FL_insurance_sample.csv',
 print(type(df))
 # show dataframe in the console
 df.show()
+df.printSchema()
